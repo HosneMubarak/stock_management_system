@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ title }} of {{ name }}<br>
+
+        <a href="{% url 'issue-item' stock.id %}">
+            <div class="btn btn-danger">ISSUE THIS ITEM</div>
+        </a>
+        <a href="{% url 'receive-item' stock.id %}">
+            <div class="btn btn-primary">RECEIVE ITEM</div>
+        </a>
+        <br><br>
+        <div class="list-table">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Quantity In Store</th>
+                    <th scope="col">TIMESTAMP</th>
+                    <th scope="col">LAST UPDATE</th>
+                    <th scope="col">DELETE</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{ stock.category }}</td>
+                    <td><a href="{% url 'update-items' stock.id %}">{{ stock.item_name }}</a></td>
+                    <td>{{ stock.quantity }}</td>
+                    <td>{{ stock.timestamp }}</td>
+                    <td>{{ stock.last_updated }}</td>
+                    <td id="delete"><a href="{% url 'delete-items' stock.id %}">X
+                    </a>
+                    </td>
+
+
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+{% endblock %}

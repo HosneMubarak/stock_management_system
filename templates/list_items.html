@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block content %}
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+
+                <div class="alert alert-success" id="success-alert">
+                    <button type="button" class="close" data-dismiss="alert">x</button>
+                    <strong>Success!</strong>
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                </div>
+
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <h1>{{ title }}</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+
+
+        <div class="form-row">
+            <div class="form-group col-md-3 mb-0">
+                {{ form.category|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-3 mb-0">
+                {{ form.item_name|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-3 mb-0 mt-5">
+                {{ form.export_to_CSV|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-3 mb-0 mt-4">
+                <input type="submit" value="search" class="mt-2 btn btn-dark btn-block">
+            </div>
+        </div>
+        <br>
+
+
+    </form>
+    <div class="list-table">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Count</th>
+                <th scope="col">Category</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Quantity In Store</th>
+                <th scope="col">REORDER LEVEL</th>
+                <th scope="col">TIMESTAMP</th>
+                <th scope="col">LAST UPDATE</th>
+                <th scope="col">DELETE</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for foo in queryset %}
+                <tr>
+                    <th scope="row">{{ forloop.counter }}</th>
+                    <td>{{ foo.category }}</td>
+                    <td><a href="{% url 'update-items' foo.id %}">{{ foo.item_name }}</a></td>
+                    <td><a href="{% url 'stock-detail' foo.id %}">{% if foo.quantity <= foo.reorder_level %}
+                        <div class="bg-danger">{{ foo.quantity }}</div>{% else %}{{ foo.quantity }}
+                    {% endif %} </a></td>
+                    <td><a href="{% url 'reorder-level' foo.id %}">{{ foo.reorder_level }}</a></td>
+                    <td>{{ foo.timestamp }}</td>
+                    <td>{{ foo.last_updated }}</td>
+                    <td id="delete"><a href="{% url 'delete-items' foo.id %}">X
+                    </a>
+                    </td>
+
+
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

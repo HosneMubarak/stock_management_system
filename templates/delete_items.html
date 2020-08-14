@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block content %}
+    <h1>{{ title }}</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <p>Do you want to deete {{ queryset.item_name }} ?</p>
+        <input type="submit" value="Yes" class="btn btn-danger">
+        <a href="{% url 'list-items' %}" class="btn btn-primary">Cancel</a>
+    </form>
+{% endblock %}

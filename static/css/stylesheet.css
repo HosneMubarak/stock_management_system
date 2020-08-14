@@ -1,0 +1,47 @@
+body {
+    background-color: yellow;
+}
+
+.table {
+    font-size: 13px;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+
+.table tr:nth-child(odd) {
+    background: #ffc8a0;
+}
+
+th {
+    background-color: #f2ff5a;
+}
+
+.list-table {
+    border-bottom-right-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 7px 10px 5px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 10px 5px 7px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 10px 5px 7px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.alert {
+    -webkit-box-shadow: -5px 3px 26px 17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 3px 26px 17px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 3px 26px 17px rgba(0, 0, 0, 0.75);
+}
