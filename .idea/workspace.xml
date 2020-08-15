@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b11da560-a952-4148-8bfe-7b9d8dbd1e60" name="Default Changelist" comment="" />
+    <list default="true" id="b11da560-a952-4148-8bfe-7b9d8dbd1e60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/registration_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StockManagementSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/StockManagementSystem/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StockManagementSystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/StockManagementSystem/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmgmnt/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmgmnt/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +51,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1fzIyC43ci6mDZWRBtksD24p4aE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -52,6 +65,7 @@
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -123,6 +137,8 @@
       <workItem from="1597334699049" duration="3810000" />
       <workItem from="1597351202906" duration="1718000" />
       <workItem from="1597375407237" duration="1376000" />
+      <workItem from="1597506969569" duration="3301000" />
+      <workItem from="1597517784544" duration="1465000" />
     </task>
     <servers />
   </component>
@@ -138,22 +154,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="451" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597312266369" />
-    <state width="1323" height="90" key="GridCell.Tab.0.bottom" timestamp="1597376839291">
+    <state width="1323" height="168" key="GridCell.Tab.0.bottom" timestamp="1597519251337">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="90" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597376839291" />
-    <state width="1323" height="90" key="GridCell.Tab.0.center" timestamp="1597376839291">
+    <state width="1323" height="168" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597519251337" />
+    <state width="1323" height="168" key="GridCell.Tab.0.center" timestamp="1597519251337">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="90" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597376839291" />
-    <state width="1323" height="90" key="GridCell.Tab.0.left" timestamp="1597376839290">
+    <state width="1323" height="168" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597519251337" />
+    <state width="1323" height="168" key="GridCell.Tab.0.left" timestamp="1597519251337">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="90" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597376839290" />
-    <state width="1323" height="90" key="GridCell.Tab.0.right" timestamp="1597376839291">
+    <state width="1323" height="168" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597519251337" />
+    <state width="1323" height="168" key="GridCell.Tab.0.right" timestamp="1597519251337">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="90" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597376839291" />
+    <state width="1323" height="168" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597519251337" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1597317640157">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -162,9 +178,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="12" key="SettingsEditor/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597351455094" />
-    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1597406305765">
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1597517784435">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597406305765" />
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597517784435" />
   </component>
 </project>

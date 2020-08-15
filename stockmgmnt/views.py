@@ -4,6 +4,7 @@ import csv
 from django.contrib import messages
 from .models import *
 from .forms import *
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -15,7 +16,7 @@ def home(request):
     }
     return render(request, 'home.html', context)
 
-
+@login_required()
 def list_items(request):
     queryset = Stock.objects.all()
     title = 'List Of Items'
@@ -41,7 +42,7 @@ def list_items(request):
     }
     return render(request, 'list_items.html', context)
 
-
+@login_required()
 def add_items(request):
     form = StockCreateForm(request.POST or None)
     title = 'Add Items'

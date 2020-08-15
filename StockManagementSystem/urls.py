@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from stockmgmnt.views import home, list_items, add_items, update_items, delete_items, stock_details, issue_items, \
     receive_item, reorder_level_view
 
@@ -33,4 +33,6 @@ urlpatterns = [
                   path('reorder_level/<str:pk>', reorder_level_view, name='reorder-level'),
 
                   path('admin/', admin.site.urls),
+
+                  path('accounts/', include('registration.backends.default.urls')),
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
